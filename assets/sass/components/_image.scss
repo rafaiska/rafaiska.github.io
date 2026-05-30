@@ -77,6 +77,12 @@
 			width: 150px;
 		}
 
+		&.gameplay-preview {
+			&:before {
+				display: none;
+			}
+		}
+
 		&.main {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;

@@ -712,6 +712,10 @@ input, select, textarea {
 			width: 150px;
 		}
 
+		.image.gameplay-preview:before {
+			display: none;
+		}
+
 		.image.main {
 			display: block;
 			margin: 2.5rem 0;
