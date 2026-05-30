@@ -635,6 +635,10 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+	.fa-bluesky:before {
+		content: "\e671";
+	}
+
 /* Image */
 
 	.image {
@@ -693,6 +697,20 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+
+		.image.centered {
+			display: block;
+			margin: 2.5rem auto;
+			max-width: 100%;
+		}
+
+			.image.centered img {
+				width: 100%;
+			}
+
+		.image.about-photo {
+			width: 150px;
+		}
 
 		.image.main {
 			display: block;
@@ -904,6 +922,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
+			vertical-align: top;
 		}
 
 			ul.icons li:last-child {
@@ -919,6 +938,28 @@ input, select, textarea {
 				text-align: center;
 				width: 2.25rem;
 			}
+
+				ul.icons li a.custom-icon {
+					align-items: center;
+					display: inline-flex;
+					justify-content: center;
+					line-height: 1;
+					vertical-align: top;
+				}
+
+					ul.icons li a.custom-icon:before {
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: '';
+						display: block;
+						height: 1.35rem;
+						width: 1.35rem;
+					}
+
+					ul.icons li a.godot-icon:before {
+						background-image: url("../../images/godot.svg");
+					}
 
 				ul.icons li a:hover {
 					background-color: rgba(255, 255, 255, 0.075);

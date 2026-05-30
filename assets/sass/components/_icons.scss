@@ -14,6 +14,7 @@
 		li {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
+			vertical-align: top;
 
 			&:last-child {
 				padding-right: 0;
@@ -27,6 +28,28 @@
 				line-height: 2.25rem;
 				text-align: center;
 				width: 2.25rem;
+
+				&.custom-icon {
+					align-items: center;
+					display: inline-flex;
+					justify-content: center;
+					line-height: 1;
+					vertical-align: top;
+
+					&:before {
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: contain;
+						content: '';
+						display: block;
+						height: 1.35rem;
+						width: 1.35rem;
+					}
+				}
+
+				&.godot-icon:before {
+					background-image: url('../../images/godot.svg');
+				}
 
 				&:hover {
 					background-color: _palette(border-bg);

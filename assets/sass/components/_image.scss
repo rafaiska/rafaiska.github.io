@@ -63,6 +63,20 @@
 			}
 		}
 
+		&.centered {
+			display: block;
+			margin: (_size(element-margin) * 1.25) auto;
+			max-width: 100%;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&.about-photo {
+			width: 150px;
+		}
+
 		&.main {
 			display: block;
 			margin: (_size(element-margin) * 1.25) 0;
