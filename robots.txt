@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rafaiska.com
+Sitemap: https://rafaiska.com/sitemap.xml
