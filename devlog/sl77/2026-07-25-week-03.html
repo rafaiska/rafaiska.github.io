@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Week 03 &mdash; The Martian Trash Panda Strikes | Space Liner 77 Devlog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Barrba's opossum escapes during his panic, flees its owner, and raids unattended kitchens aboard Space Liner 77." />
+		<link rel="canonical" href="https://rafaiska.com/devlog/sl77/2026-07-25-week-03.html" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon512.png" />
+		<link rel="apple-touch-icon" href="/images/favicon512.png" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<style>
+			.devlog-page { min-height: 100vh; justify-content: flex-start !important; padding-top: 4rem !important; }
+			.devlog-post, .devlog-footer { width: 100%; max-width: 52rem; }
+			.devlog-post { padding: 2.5rem 3rem; border: solid 1px rgba(255, 255, 255, 0.25); border-radius: 4px; background: rgba(27, 31, 34, 0.88); }
+			.devlog-post header { margin-bottom: 2.5rem; text-align: center; }
+			.devlog-post header h1 { margin-bottom: 0.75rem; }
+			.devlog-post time { color: rgba(255, 255, 255, 0.65); font-size: 0.8rem; letter-spacing: 0.15rem; text-transform: uppercase; }
+			.devlog-post h2 { margin-top: 2.25rem; }
+			.devlog-post .lede { font-size: 1.1rem; text-align: center; }
+			.devlog-nav { margin-bottom: 2rem; }
+			.devlog-footer { margin-top: 2.5rem; text-align: center; }
+			@media screen and (max-width: 736px) {
+				.devlog-page { padding-top: 2rem !important; }
+				.devlog-post { padding: 1.75rem 1.25rem; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper" class="devlog-page">
+			<article class="devlog-post">
+				<nav class="devlog-nav"><a href="index.html">&larr; All devlogs</a></nav>
+				<header>
+					<h1>Week 03 &mdash; The Martian Trash Panda Strikes</h1>
+					<time datetime="2026-07-25">July 25, 2026</time>
+				</header>
+
+				<p class="lede">Barrba&rsquo;s opossum is loose, hungry, and now capable of raiding an unattended kitchen.</p>
+
+				<h2>What changed</h2>
+				<ul>
+					<li>Barrba&rsquo;s panic behavior now releases his opossum onto the ship, turning one passenger&rsquo;s crisis into a problem that can affect everyone.</li>
+					<li>Barrba chases the opossum while panicking, but the little troublemaker runs away whenever he gets close.</li>
+					<li>If the kitchen contains prepared meals and the captain is not around to guard them, the opossum can stop there and begin stealing food.</li>
+					<li>The opossum received its own eating animation, making the theft much more visible&mdash;and considerably harder to forgive.</li>
+					<li>Its escape behavior was adjusted so it can always choose somewhere to run, even when Barrba catches it in an awkward position.</li>
+				</ul>
+				<p>The complete interaction is now working, but it still needs thorough playtesting before I can call it finished. There are several moving parts involved: Barrba must pursue the opossum, the opossum must flee without getting stuck, and the kitchen raid must begin and end under the correct conditions.</p>
+
+				<h2>Best moment</h2>
+				<p>The opossum finally reached an unattended kitchen and started devouring the prepared meals while Barrba ran after it in a panic.</p>
+				<p>That small sequence captures exactly the kind of chaos I want in <em>Space Liner 77</em>. The player is already trying to manage a distressed passenger, but now that passenger&rsquo;s pet has escaped and is quietly destroying the ship&rsquo;s food supply. Leaving the kitchen unattended for a moment can suddenly become a much more expensive mistake.</p>
+				<p>It also gives Barrba&rsquo;s panic a personality of its own. Instead of simply behaving irrationally or becoming another generic problem, he creates a tiny story: pet escapes, owner chases pet, pet discovers dinner.</p>
+
+				<h2>Behind the scenes</h2>
+				<p>Making the opossum steal food was only part of the work. It also had to understand when the kitchen was safe to raid, stop eating when that changed, and flee correctly when Barrba approached.</p>
+				<p>One amusing bug appeared when Barrba and the opossum occupied exactly the same position. The opossum could not decide which direction was &ldquo;away,&rdquo; so it went nowhere. It now picks an escape direction in that situation, allowing the chase to continue.</p>
+
+				<h2>Next week</h2>
+				<ul>
+					<li>Playtest the full panic sequence under different ship conditions.</li>
+					<li>Look for situations where Barrba or the opossum can become stuck.</li>
+					<li>Fine-tune the timing and behavior until stealing food feels fair, readable, and delightfully troublesome.</li>
+				</ul>
+			</article>
+
+			<footer class="devlog-footer">
+				<p>&copy; Rafaiska. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+		</div>
+
+		<div id="bg"></div>
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script data-goatcounter="https://rafaiska.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	</body>
+</html>
