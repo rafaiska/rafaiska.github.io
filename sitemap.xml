@@ -8,9 +8,15 @@
   </url>
   <url>
     <loc>https://rafaiska.com/devlog/sl77/</loc>
-    <lastmod>2026-08-02</lastmod>
+    <lastmod>2026-08-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rafaiska.com/devlog/sl77/2026-08-08-week-05.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://rafaiska.com/devlog/sl77/2026-08-02-week-04.html</loc>

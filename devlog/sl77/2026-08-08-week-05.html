@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Week 05 &mdash; Introducing the Captain&rsquo;s Challenges | Space Liner 77 Devlog</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Captain challenges reward completed objectives with likes, unlocking access to more Space Liner 77 ship upgrades." />
+		<link rel="canonical" href="https://rafaiska.com/devlog/sl77/2026-08-08-week-05.html" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon32.png" />
+		<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon512.png" />
+		<link rel="apple-touch-icon" href="/images/favicon512.png" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		<style>
+			.devlog-page { min-height: 100vh; justify-content: flex-start !important; padding-top: 4rem !important; }
+			.devlog-post, .devlog-footer { width: 100%; max-width: 52rem; }
+			.devlog-post { padding: 2.5rem 3rem; border: solid 1px rgba(255, 255, 255, 0.25); border-radius: 4px; background: rgba(27, 31, 34, 0.88); }
+			.devlog-post header { margin-bottom: 2.5rem; text-align: center; }
+			.devlog-post header h1 { margin-bottom: 0.75rem; }
+			.devlog-post time { color: rgba(255, 255, 255, 0.65); font-size: 0.8rem; letter-spacing: 0.15rem; text-transform: uppercase; }
+			.devlog-post h2 { margin-top: 2.25rem; }
+			.devlog-post .lede { font-size: 1.1rem; text-align: center; }
+			.devlog-nav { margin-bottom: 2rem; }
+			.devlog-footer { margin-top: 2.5rem; text-align: center; }
+			@media screen and (max-width: 736px) {
+				.devlog-page { padding-top: 2rem !important; }
+				.devlog-post { padding: 1.75rem 1.25rem; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper" class="devlog-page">
+			<article class="devlog-post">
+				<nav class="devlog-nav"><a href="index.html">&larr; All devlogs</a></nav>
+				<header>
+					<h1>Week 05 &mdash; Introducing the Captain&rsquo;s Challenges</h1>
+					<time datetime="2026-08-08">August 8, 2026</time>
+				</header>
+
+				<p class="lede">The captain&rsquo;s new challenges reward completed objectives with likes, and earning more likes unlocks access to increasingly powerful ship upgrades.</p>
+
+				<h2>What changed</h2>
+				<ul>
+					<li>Work began on a challenge system that gives the captain additional objectives during trips. Early challenges include tasks such as cleaning the ship, with more advanced challenges becoming available after their prerequisites are completed.</li>
+					<li>Passenger capacity is becoming part of the ship&rsquo;s progression. The liner begins with room for one passenger, while upgrades can expand that limit to two and eventually three.</li>
+					<li>Meals now matter more to individual passengers. Everyone chooses the most satisfying available dish, and Jellyfer still makes her opinion known whenever dinner is not a burger.</li>
+					<li>Paul Tergeist can finally sit properly at sofas and dining tables, making the ship&rsquo;s ghostly passenger feel more at home among the crew.</li>
+					<li>Cleaning now has its own captain animation. When the floor gets dirty, the captain visibly gets to work with a mop instead of relying on a generic action.</li>
+					<li>The game now keeps track of useful trip statistics, including what each passenger eats and how often the captain cleans.</li>
+				</ul>
+
+				<p>Challenges are intended to connect the captain&rsquo;s everyday responsibilities with the ship&rsquo;s longer-term progression. Completing objectives produces likes, while accumulating likes makes more upgrades available. Credits are still needed to purchase those upgrades, so a successful captain will have to balance reputation with the ship&rsquo;s finances.</p>
+				<p>Expanded passenger capacity is one example of this progression. Carrying more travelers creates livelier trips, but it also means keeping up with more needs, preferences, and potential trouble at the same time.</p>
+
+				<h2>Behind the scenes</h2>
+				<p>The new statistics system records actions without tying them to one specific feature. Serving a meal, cleaning the floor, or completing another task can be recorded once and then used by several systems.</p>
+				<p>The first use for this information will be challenges. Instead of checking the entire ship every moment, a challenge can listen for the actions that matter to it and update when they happen. This shared foundation should make it easier to introduce more objectives later without building a separate tracking system for every one of them.</p>
+				<p>Passenger reactions are also being separated into individual handlers. That gives each traveler more room for personal responses&mdash;like Jellyfer complaining about a burgerless meal&mdash;while keeping the general passenger behavior consistent.</p>
+
+				<h2>Next week</h2>
+				<ul>
+					<li>Finish the challenge system and connect objectives to progress made during trips.</li>
+					<li>Work on Paul Tergeist&rsquo;s unique panic mechanic.</li>
+				</ul>
+			</article>
+
+			<footer class="devlog-footer">
+				<p>&copy; Rafaiska. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			</footer>
+		</div>
+
+		<div id="bg"></div>
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script data-goatcounter="https://rafaiska.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+	</body>
+</html>
